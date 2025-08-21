@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass);
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass';
+    background-color: hsl(216, 12%, 8%);
+}
+
+body p{
+    font-size: 15px;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: hsl(213, 19%, 18%);
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-img{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(213, 19%, 22%);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-buttons{
+    padding: 20px;
+}
+
+.rating-buttons button{
+    width: 40px;
+    height: 40px;
+    background-color: hsl(213, 19%, 22%);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    color: white;
+    font-family: 'Overpass';
+    margin: 0 4px 0 4px;
+    transition: 0.5s;
+}
+
+.rating-buttons button:hover{
+    color: black;
+    background-color: hsl(25, 97%, 53%);
+}
+.rating-buttons button:focus{
+    color: black;
+    background-color: white;
+}
+
+.submit-button button{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    font-family: 'Overpass';
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit-button button:hover{
+    background-color: white;
+}
+
+#thanks-container{
+    width: 300px;
+    height: 300px;
+    background-color: hsl(213, 19%, 18%);
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.selected-rating{
+    width: 200px; 
+    height: 30px;
+    background-color: hsl(213, 19%, 22%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
