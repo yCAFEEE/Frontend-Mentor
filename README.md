@@ -1,2 +1,2 @@
-É isso aí
-Outra hora eu penso nesse trem
+- É isso aí
+- Outra hora eu penso nesse trem
