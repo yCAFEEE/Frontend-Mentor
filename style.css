@@ -2,12 +2,14 @@
 
 :root{
     --background-color: #ffffff;
+    --sec-background-color: #cecece;
     --text-color: #000000;
 }
 
 @media (prefers-color-scheme: dark){
         :root{
         --background-color: #202020;
+        --sec-background-color: #2b2a2a;
         --text-color: #ffffff;
     }
 }
@@ -59,9 +61,33 @@ body{
     border-radius: 5px;
 }
 
+.links-container{
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--sec-background-color);
+    height: 25%;
+    width: 20vw;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.links-container a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.links-container a:hover{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px){
     .img-container, .img-container img{
         width: 95vw;
         max-height: 70vw;
+    }
+
+    .links-container{
+        width: 95vw;
     }
 }
