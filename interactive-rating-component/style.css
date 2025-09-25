@@ -8,6 +8,7 @@ body{
     align-items: center;
     font-family: 'Overpass';
     background-color: hsl(216, 12%, 8%);
+    margin: 0;
 }
 
 body p{
