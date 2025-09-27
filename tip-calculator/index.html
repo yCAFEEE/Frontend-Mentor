@@ -6,19 +6,20 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    
-  </style>
+  <title>Frontend Mentor | Tip calculator app</title>
 </head>
+
 <body>
+  <div class="logo">
+      <img src="images/logo.svg">
+  </div>
   <div class="container">
     <div class="settings-container">
-      <p>Bill</p>
-      <input type="number">
+      <div class="bill-container">
+        <p>Bill</p>
+        <input name="bill" type="number" id="bill_id">
+      </div>
       <p>Select Tip %</p>
       <div class="buttons-container">
         <div><button>5%</button></div>
@@ -26,22 +27,29 @@
         <div><button>15%</button></div>
         <div><button>25%</button></div>
         <div><button>50%</button></div>
-        <div><input placeholder="Custom"></div>
+        <div class="custom-tip-container"><input name="custom_tip_amount" placeholder="Custom" id="custom_tip_id"></div>
       </div>
-      <p>Number of People</p>
-      <input type="number">
+      <div class="number-people-container">
+        <p>Number of People</p>
+        <input name="number_of_people" type="number" id="number_people_id">
+      </div>
     </div>
-  
 
     <div class="result-container">
 
       <p>Tip Amount</p>
       / person
+      <div id="tip-amount" style="display: none;">
+
+      </div>
     
       <p>Total</p>
-      / person<br>
+      / person
+      <div id="total" style="display: none;">
+
+      </div>
       <div class="reset-button">
-        <button>Reset</button>
+        <button onclick=reset()>Reset</button>
       </div>
     </div>
   </div>
@@ -50,5 +58,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/yCAFEEE/">yCAFEEE</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -20,27 +20,47 @@ body{
     margin: 0;
 }
 
+input{
+    background-color: var(--Grey-200);
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+}
+
 .container{
     font-family: 'Space Mono';
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     background-color: white;
-    width: 700px;
+    width: 900px;
     min-height: 400px;
     padding: 20px;
     border-radius: 20px;
-    gap: 32px;
+    gap: 15px;
+}
+
+.bill-container input{
+    background: url(images/icon-dollar.svg) no-repeat left var(--Grey-200);
+    text-align: right;
+    width: 100%;
+}
+
+.number-people-container input{
+    background: url(images/icon-person.svg) no-repeat left var(--Grey-200);
+    text-align: right;
+    width: 100%;
 }
 
 .buttons-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 12px;
+    justify-content: center;
 }
 
 .buttons-container button{
     background-color: var(--Green-900);
-    width: 100px;
+    width: 120px;
     height: 50px;
     border: none;
     color: white;
@@ -57,14 +77,22 @@ body{
     transition-duration: 0.3s;
 }
 
+.buttons-container button:focus{
+    background-color: var(--Green-400);
+    color: var(--Green-900);
+}
+
 .buttons-container input{
-    background-color: var(--Grey-200);
-    width: 100px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
+    width: 120px;
     font-family: 'Space Mono';
-    font-size: 24px;
+    text-align: center;
+}
+
+.custom-tip-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .result-container{
@@ -72,10 +100,15 @@ body{
     color: white;
     border-radius: 20px;
     padding: 50px;
-    justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#tip-amount, #total{
+    font-size: 40px;
+    color: var(--Green-400);
+    font-weight: bold;
 }
 
 .result-button{
