@@ -17,27 +17,28 @@
 <body>
   <div class="container">
     <div class="input-container">
-      <div style="float: left; margin-right: 20px;">
+      <div id="day-input" style="float: left; margin-right: 20px;">
         <label for="day">Day</label>
         <input type="number" name="day" id="day" placeholder="DD">
       </div>
       
-      <div style="float: left; margin-right: 20px;">
+      <div id="month-input" style="float: left; margin-right: 20px;">
         <label for="month">Month</label>
         <input type="number" name="month" id="month" placeholder="MM">
       </div>
     
-      <div style="float: left;">
+      <div id="year-input" style="float: left;">
         <label for="year">Year</label>
         <input type="number" name="year" id="year" placeholder="YYYY">
       </div>
     </div>
 
     <div class="submit-container">
-      <div class="line"></div>
+      <hr>
       <button onclick="show()" class="submit-button">
         <img src="assets/images/icon-arrow.svg">
       </button>
+      <hr class="mobile-line">
     </div>
 
     <div id="result">
