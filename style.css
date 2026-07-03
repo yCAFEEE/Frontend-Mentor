@@ -12,13 +12,13 @@
 }
 
 h1{
-    margin: 20px 0 20px 0;
+    margin: 10px 0;
     color: rgb(255, 60, 60);
 }
 
 p, a{
     font-size: 18px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
 }
 
 body{
@@ -125,7 +125,7 @@ main{
     .img-container:hover .hover-box{
         display: none;
     }
-    
+
     .links-container{
         width: 90vw;
         height: 100%;
