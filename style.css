@@ -69,6 +69,19 @@ main{
     border-radius: 4px;
 }
 
+.hover-box{
+    display: none;
+    width: 30vw;
+    height: 30vh;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+}
+
+.img-container:hover .hover-box{
+    display: block;
+}
+
 .links-container{
     width: 70vw;
     margin: 10px;
@@ -107,6 +120,10 @@ main{
     
     .img-container{
         width: 90vw;
+    }
+    
+    .img-container:hover .hover-box{
+        display: none;
     }
     
     .links-container{
