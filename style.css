@@ -16,7 +16,7 @@ h1{
     color: rgb(255, 60, 60);
 }
 
-p{
+p, a{
     font-size: 18px;
     margin: 10px 0 10px 0;
 }
