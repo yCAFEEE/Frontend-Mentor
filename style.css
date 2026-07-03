@@ -25,19 +25,27 @@ body{
     min-height: 100vh;
     background-color: var(--background-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
     font-family: 'Montserrat';
 }
 
-.sidebar{
-    height: 80vh;
-    width: 20vw;
+header{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--sec-background-color);
     margin: 10px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 4px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 .text-container{
@@ -48,6 +56,7 @@ body{
 }
 
 .img-container{
+    width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,19 +65,17 @@ body{
 
 .img-container img{
     object-fit: cover;
-    max-height: 50vh;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .links-container{
-    height: 80vh;
-    width: 40%;
+    width: 70vw;
     margin: 10px;
     padding: 20px;
     background-color: var(--sec-background-color);
     text-align: left;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .links-container ul{
@@ -87,11 +94,12 @@ body{
 }
 
 @media screen and (max-width: 768px){
-    body{
+    main{
         flex-direction: column;
     }
     
-    .sidebar{
+    header{
+        flex-direction: column;
         width: 90vw;
         height: 100%;
         padding: 10px;
