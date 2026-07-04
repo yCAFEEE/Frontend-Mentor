@@ -6,6 +6,7 @@
 }
 
 :root{
+    --blue: rgb(0, 130, 255);
     --white: rgb(255, 255, 255);
     --off-white: rgb(240, 240, 240);
     --light-gray: rgb(200, 200, 200);
@@ -108,6 +109,15 @@ main{
 
 .links-container a:hover{
     text-decoration: underline;
+}
+
+.footer-container p, .footer-container a{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.footer-container a{
+    color: var(--blue);
 }
 
 @media screen and (max-width: 768px){
