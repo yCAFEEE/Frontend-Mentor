@@ -6,10 +6,11 @@
 }
 
 :root{
-    --background-color: #ffffff;
-    --sec-background-color: #cecece;
-    --text-color: #000000;
-    --gray: #646464;
+    --white: rgb(255, 255, 255);
+    --off-white: rgb(240, 240, 240);
+    --light-gray: rgb(200, 200, 200);
+    --gray: rgb(100, 100, 100);
+    --black: rgb(0, 0, 0);
 }
 
 h1{
@@ -23,12 +24,12 @@ p, a{
 
 body{
     min-height: 100vh;
-    background-color: var(--background-color);
+    background-color: var(--off-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--text-color);
+    color: var(--black);
     font-family: 'Montserrat';
 }
 
@@ -36,10 +37,10 @@ header{
     width: 70vw;
     display: flex;
     justify-content: space-between;
-    background-color: var(--sec-background-color);
+    background-color: var(--white);
     margin: 10px;
     padding: 20px;
-    border: solid 1px var(--gray);
+    border: solid 1px var(--light-gray);
     border-radius: 4px;
 }
 
@@ -87,9 +88,9 @@ main{
     width: 70vw;
     margin: 10px;
     padding: 20px;
-    background-color: var(--sec-background-color);
+    background-color: var(--white);
     text-align: left;
-    border: solid 1px var(--gray);
+    border: solid 1px var(--light-gray);
     border-radius: 4px;
 }
 
@@ -99,12 +100,12 @@ main{
 }
 
 .links-container a{
-    color: var(--text-color);
+    color: var(--black);
     text-decoration: none;
 }
 
 .links-container a:hover{
-    color: var(--text-color);
+    color: var(--black);
     text-decoration: underline;
 }
 
