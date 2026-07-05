@@ -105,10 +105,24 @@ input{
     justify-content: space-between;
 }
 
-#tip-amount, #total{
+.tip-amount-container, .total-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container h3, .text-container p{
+    margin: 0;
+}
+
+.text-container p{
+    opacity: 50%;
+}
+
+#tip-amount p, #total p{
     font-size: 40px;
     color: var(--Green-400);
     font-weight: bold;
+    margin: 0;
 }
 
 .result-button{
