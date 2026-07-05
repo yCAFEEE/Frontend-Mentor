@@ -55,12 +55,12 @@ input{
 .buttons-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .buttons-container button{
     background-color: var(--Green-900);
-    width: 120px;
+    width: 150px;
     height: 50px;
     border: none;
     color: white;
@@ -83,8 +83,9 @@ input{
 }
 
 .buttons-container input{
-    width: 120px;
+    width: 150px;
     font-family: 'Space Mono';
+    font-weight: 700;
     text-align: center;
 }
 
