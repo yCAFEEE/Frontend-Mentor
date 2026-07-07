@@ -48,7 +48,6 @@ function show_tip(){
 function calc_total(){
     if(num_people > 0){
         total = bill / num_people;
-        total -= tip;
     }else{
         total = 0;
     }
