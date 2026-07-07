@@ -21,15 +21,23 @@ body{
 }
 
 input{
+    box-sizing: border-box;
     background-color: var(--Grey-200);
     font-size: 24px;
     border: none;
     border-radius: 5px;
     height: 50px;
+    padding: 10px;
+}
+
+input:focus{
+    border: solid 2px var(--Green-400);
+    outline: none;
 }
 
 .container{
     font-family: 'Space Mono';
+    color: var(--Grey-500);
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
@@ -40,16 +48,26 @@ input{
     gap: 15px;
 }
 
+.settings-container{
+    font-weight: 700;
+}
+
 .bill-container input{
-    background: url(images/icon-dollar.svg) no-repeat left var(--Grey-200);
-    text-align: right;
     width: 100%;
+    background: url(images/icon-dollar.svg) no-repeat 10px var(--Grey-200);
+    text-align: right;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    color: var(--Green-900);
 }
 
 .number-people-container input{
-    background: url(images/icon-person.svg) no-repeat left var(--Grey-200);
-    text-align: right;
     width: 100%;
+    background: url(images/icon-person.svg) no-repeat 10px var(--Grey-200);
+    text-align: right;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    color: var(--Green-900);
 }
 
 .buttons-container{
@@ -67,6 +85,7 @@ input{
     margin: 5px;
     border-radius: 5px;
     font-family: 'Space Mono';
+    font-weight: 700;
     font-size: 24px;
     cursor: pointer;
 }
@@ -84,6 +103,7 @@ input{
 
 .buttons-container input{
     width: 150px;
+    color: var(--Green-900);
     font-family: 'Space Mono';
     font-weight: 700;
     text-align: center;
