@@ -1,7 +1,7 @@
-var bill;
-var num_people;
-var total;
-var tip;
+var bill = 0;
+var num_people = 1;
+var total = 0;
+var tip = 0;
 
 document.getElementById("bill_id").addEventListener("input", function(event){
     bill = Number(event.target.value);
@@ -13,6 +13,14 @@ document.getElementById("bill_id").addEventListener("input", function(event){
 
 document.getElementById("number_people_id").addEventListener("input", function(event){
     num_people = Number(event.target.value);
+    calc_tip();
+    calc_total();
+    show_tip();
+    show_total();
+});
+
+document.getElementById("custom_tip_id").addEventListener("input", function(event){
+    tip = Number(event.target.value);
     calc_tip();
     calc_total();
     show_tip();
@@ -40,10 +48,6 @@ function calc_tip(){
     }
 }
 
-function show_tip(){
-    document.getElementById("tip-amount").innerHTML = `<p>$ ${tip.toFixed(2)}</p>`;
-    document.getElementById("tip-amount").style.display = "block";
-}
 
 function calc_total(){
     if(num_people > 0){
@@ -51,6 +55,11 @@ function calc_total(){
     }else{
         total = 0;
     }
+}
+
+function show_tip(){
+    document.getElementById("tip-amount").innerHTML = `<p>$ ${tip.toFixed(2)}</p>`;
+    document.getElementById("tip-amount").style.display = "block";
 }
 
 function show_total(){
