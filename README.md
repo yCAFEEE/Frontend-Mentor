@@ -16,6 +16,11 @@ Frontend Mentor is a platform that provides challenges to improve frontend skill
 - **Status:** Solved ✅
 - **Solution:** https://ycafeee.github.io/Frontend-Mentor/interactive-rating-component/
 - **Challenge:** https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI
+- 
+### **QR Code Component**
+- **Status:** Solved ✅
+- **Solution:** https://ycafeee.github.io/Frontend-Mentor/qr-code-component/
+- **Challenge:** https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H
 
 ### **Recipe Page**
 - **Status:** Solved ✅
