@@ -38,3 +38,21 @@ body{
     object-fit: cover;
     border-radius: 10px;
 }
+
+.text-container{
+    text-align: center;
+}
+
+.text-container h2{
+    color: var(--Slate-900);
+}
+
+.text-container p{
+    color: var(--Slate-500);
+}
+
+@media screen and (max-width: 375px){
+    .content-container{
+        width: 70vw;
+    }
+}
