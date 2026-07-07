@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root{
     --White: rgb(255, 255, 255);
     --Slate-300: rgb(214, 226, 240);
@@ -17,6 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--Slate-300);
+    font-family: 'Outfit';
 }
 
 .content-container{
