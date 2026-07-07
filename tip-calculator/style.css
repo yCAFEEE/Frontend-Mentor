@@ -38,10 +38,11 @@ input:focus{
 .container{
     font-family: 'Space Mono';
     color: var(--Grey-500);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: white;
-    width: 900px;
+    width: 50vw;
     min-height: 400px;
     padding: 20px;
     border-radius: 20px;
@@ -72,17 +73,17 @@ input:focus{
 
 .buttons-container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .buttons-container button{
     background-color: var(--Green-900);
-    width: 150px;
+    width: 100%;
     height: 50px;
     border: none;
     color: white;
-    margin: 5px;
     border-radius: 5px;
     font-family: 'Space Mono';
     font-weight: 700;
@@ -102,7 +103,7 @@ input:focus{
 }
 
 .buttons-container input{
-    width: 150px;
+    width: 100%;
     color: var(--Green-900);
     font-family: 'Space Mono';
     font-weight: 700;
@@ -118,12 +119,14 @@ input:focus{
 
 .result-container{
     background-color: var(--Green-900);
+    min-width: 50%;
     color: white;
     border-radius: 20px;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .tip-amount-container, .total-container{
@@ -176,4 +179,19 @@ input:focus{
 
 .attribution a{
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .buttons-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .result-container{
+        padding: 30px;
+    }
 }
