@@ -6,6 +6,8 @@ My attempts and solutions for various Frontend Mentor challenges. GitHub Pages w
 ## Frontend Mentor
 Frontend Mentor is a platform that provides challenges to improve frontend skills such as mobile layouts, HTML, CSS, JavaScript, and more.
 
+My profile in Frontend Mentor: https://www.frontendmentor.io/profile/yCAFEEE
+
 ## Challenges attempted or solved
 ### **Age Calculator App**
 - **Status:** Solved ✅
