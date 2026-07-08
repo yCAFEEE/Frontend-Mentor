@@ -30,6 +30,6 @@ My profile in Frontend Mentor: https://www.frontendmentor.io/profile/yCAFEEE
 - **Challenge:** https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm
 
 ### **Tip Calculator App**
-- **Status:** In Progress ⏳
+- **Status:** Solved ✅
 - **Solution:** https://ycafeee.github.io/Frontend-Mentor/tip-calculator/
 - **Challenge:** https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
